@@ -9,10 +9,15 @@ function myButtonClicked () {
   const base1 = parseInt(document.getElementById("base-of-trapezoid-1").value)
   const base2 = parseInt(document.getElementById("base-of-trapezoid-2").value)
   const height = parseInt(document.getElementById("height-of-trapezoid").value)
+  const side1 = parseInt(document.getElementById("side-of-trapezoid-1").value)
+  const side2 = parseInt(document.getElementById("side-of-trapezoid-2").value)
 
   // process
   const area = ((base1 + base2) * height) /2
+  const perimeter = (base1 + base2 + side1 + side2)
 
   // output
   document.getElementById("Area-of-a-Trapezoid").innerHTML = area.toFixed(2) + " cm²"
+  document.getElementById("Perimeter-of-a-Trapezoid").innerHTML = perimeter.toFixed(2) + " cm"
+
 }

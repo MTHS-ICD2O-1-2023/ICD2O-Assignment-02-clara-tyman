@@ -7,12 +7,6 @@ body {
   background-color: rgb(214 181 236);
 }
 
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-} 
-
 .content {
   padding-left: 10px;
   padding-right: 10px;
@@ -24,5 +18,13 @@ body {
 }
 
 .area-formula {
-  width: 700px;
+  width: 400px;
+}
+
+.perimeter-formula {
+  width: 400px;
+}
+
+.mdl-layout-title {
+  padding-left: 450px;
 }
